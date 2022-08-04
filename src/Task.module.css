@@ -1,0 +1,54 @@
+.taskWrapper {
+  width: 100%;
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  align-items: center;
+}
+
+.taskWrapper + .taskWrapper {
+  margin-top: 0.75rem;
+}
+
+.content {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  line-height: 1rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.contentFinished {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+  line-height: 1rem;
+  text-decoration: line-through;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  color: var(--gray-300);
+  margin-left: 1.2rem;
+}
+
+.deleteButton:hover {
+  color: var(--red-400);
+}
+
+.checkButton {
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  color: var(--blue-300);
+}
